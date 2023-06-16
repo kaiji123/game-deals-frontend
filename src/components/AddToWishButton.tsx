@@ -10,7 +10,7 @@ interface BuyButtonProps {
 const AddToWishButton: React.FC<BuyButtonProps> = ({ item, handleBuy }) => {
   return (
     <div className="button-container">
-      <button className="button" onClick={() => handleBuy(item)}>
+      <button className="button" onClick={() => handleBuy(item)} data-testid="buy-button">
         Add to Wishlist
       </button>
     </div>

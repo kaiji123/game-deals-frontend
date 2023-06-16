@@ -29,7 +29,7 @@ export interface Deal {
   rating: number | null
 }
 
-interface Store {
+export interface Store {
   storeID: string;
   storeName: string;
   isActive: number;
@@ -171,7 +171,7 @@ const ListView: React.FC = () => {
   }, []);
 
   return (
-    <div>
+    <div data-testid="list-view">
         <Navbar/>
       
 
